@@ -8,7 +8,7 @@ RUN apt-get update && \
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # Download and extract 2048 game
-RUN curl -L -o /var/www/html/master.zip https://github.com/gabrielecirulli/2048/archive/refs/heads/master.zip && \
+RUN curl -L -o /var/www/html/master.zip https://github.com/salmansallu1/gaming/archive/refs/heads/master.zip && \
     cd /var/www/html/ && unzip master.zip && mv 2048-master/* . && rm -rf 2048-master master.zip
 
 EXPOSE 80
