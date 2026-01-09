@@ -17,5 +17,7 @@ RUN curl -L -o /tmp/game.zip https://github.com/salmansallu1/gaming/archive/refs
 
 EXPOSE 80
 
-CMD ["nginx"]
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+
+
 #code build successfully
